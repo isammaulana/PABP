@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ZammTzyFB</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="assets/title.png">
+  </head>
+  <body background="bg.png">
+  <body>
+  <div id="fb-root"></div>
+    <script src="script/config.js"></script>
+    <header>
+      <div class="header-inner">
+        <div class="header-title">
+          <h2><span>Zamm</span>Tzy</h2>
+        </div>
+        <nav id="navbar" class="">
+          <ul class="">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="https://facebook.com/www.snkz">Kontak</a></li>
+            <li><a id="logout" href="#" onclick="logout()">Logout</a></li>
+            <li>
+              <div
+                id="login"
+                data-width=""
+                data-size="medium"
+                data-button-type="login_with"
+                data-layout="default"
+                data-auto-logout-link="false"
+                data-use-continue-as="false"
+                onlogin="checkLoginState()"
+            >
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        
+          <div id="default-index">
+            <h3 class="panel-title">Login dengan Facebook</h3>
+            <div class="fb-login-button"
+                 data-width=""
+                 data-size="large"
+                 data-button-type="login_with"
+                 data-layout="default"
+                 data-auto-logout-link="false"
+                 data-use-continue-as="false"
+                 onlogin="checkLoginState()"
+            >
+             Login Sekarang
+            </div>
+          </div>
+
+          <div id="login-index">
+            <div id="profile" class="profile-container">
+
+            </div>
+
+            <div class="post-title" align="center">
+              <h3>Postingan Terakhir</h3>
+            </div>
+
+            <div id="post" class="post-container">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</body>
+</html>
